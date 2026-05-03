@@ -252,8 +252,8 @@
         .product-card {
             background: var(--white);
             border: 1px solid #eee;
-            border-radius: 8px;
-            padding: 2rem;
+            border-radius: 10px;
+            overflow: hidden;
             text-align: center;
             transition: var(--transition);
             display: flex;
@@ -264,29 +264,42 @@
 
         .product-card:hover {
             border-color: var(--orange);
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
         }
 
-        .product-icon {
-            width: 64px;
-            height: 64px;
-            margin-bottom: 1.5rem;
-            fill: var(--navy);
-            transition: var(--transition);
+        .product-img-wrap {
+            width: 100%;
+            height: 180px;
+            overflow: hidden;
         }
 
-        .product-card:hover .product-icon {
-            fill: var(--orange);
+        .product-img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .product-card:hover .product-img-wrap img {
+            transform: scale(1.08);
+        }
+
+        .product-card-body {
+            padding: 1.2rem 1.5rem 1.5rem;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .product-card h3 {
-            font-size: 1.25rem;
-            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+            color: var(--navy);
         }
 
         .enquire-btn {
-            margin-top: 1.5rem;
             color: var(--orange);
             text-decoration: none;
             font-weight: 600;
@@ -820,115 +833,145 @@
         </div>
 
         <div class="products-grid">
-            <!-- Product Card 1 -->
+            <!-- MS Angle -->
             <div class="product-card">
-                <svg class="product-icon" viewBox="0 0 24 24">
-                    <path d="M12,2L2,22H22L12,2M12,5.84L18.66,19H5.34L12,5.84Z" />
-                </svg>
-                <h3>Angles</h3>
-                <a href="https://wa.me/91XXXXXXXXXX?text=Hello%2C%20I%20want%20to%20enquire%20about%20Angles"
-                    class="enquire-btn">Enquire on WhatsApp →</a>
+                <div class="product-img-wrap">
+                    <img src="MS Angle.jpg" alt="MS Angles">
+                </div>
+                <div class="product-card-body">
+                    <h3>Angles</h3>
+                    <a href="https://wa.me/91XXXXXXXXXX?text=Hello%2C%20I%20want%20to%20enquire%20about%20Angles" class="enquire-btn">Enquire on WhatsApp →</a>
+                </div>
             </div>
-            <!-- Product Card 2 -->
+            <!-- MS Channel -->
             <div class="product-card">
-                <svg class="product-icon" viewBox="0 0 24 24">
-                    <path d="M3,5V19H21V5H3M19,17H5V7H19V17Z" />
-                </svg>
-                <h3>Channels</h3>
-                <a href="https://wa.me/91XXXXXXXXXX?text=Hello%2C%20I%20want%20to%20enquire%20about%20Channels"
-                    class="enquire-btn">Enquire on WhatsApp →</a>
+                <div class="product-img-wrap">
+                    <img src="MS Channel.jpg" alt="MS Channels">
+                </div>
+                <div class="product-card-body">
+                    <h3>Channels</h3>
+                    <a href="https://wa.me/91XXXXXXXXXX?text=Hello%2C%20I%20want%20to%20enquire%20about%20Channels" class="enquire-btn">Enquire on WhatsApp →</a>
+                </div>
             </div>
-            <!-- Product Card 3 -->
+            <!-- Beams -->
             <div class="product-card">
-                <svg class="product-icon" viewBox="0 0 24 24">
-                    <path d="M12,2L1,21H23L12,2M12,6L19.53,19H4.47L12,6Z" />
-                </svg>
-                <h3>Beams</h3>
-                <a href="https://wa.me/91XXXXXXXXXX?text=Hello%2C%20I%20want%20to%20enquire%20about%20Beams"
-                    class="enquire-btn">Enquire on WhatsApp →</a>
+                <div class="product-img-wrap">
+                    <img src="beam.jpg" alt="Beams">
+                </div>
+                <div class="product-card-body">
+                    <h3>Beams</h3>
+                    <a href="https://wa.me/91XXXXXXXXXX?text=Hello%2C%20I%20want%20to%20enquire%20about%20Beams" class="enquire-btn">Enquire on WhatsApp →</a>
+                </div>
             </div>
-            <!-- Product Card 4 -->
+            <!-- MS Flat Bars -->
             <div class="product-card">
-                <svg class="product-icon" viewBox="0 0 24 24">
-                    <path d="M3,11H21V13H3V11M3,18H21V20H3V18M3,4H21V6H3V4Z" />
-                </svg>
-                <h3>Flats</h3>
-                <a href="https://wa.me/91XXXXXXXXXX?text=Hello%2C%20I%20want%20to%20enquire%20about%20Flats"
-                    class="enquire-btn">Enquire on WhatsApp →</a>
+                <div class="product-img-wrap">
+                    <img src="MS Flat bars.jpg" alt="MS Flat Bars">
+                </div>
+                <div class="product-card-body">
+                    <h3>Flats</h3>
+                    <a href="https://wa.me/91XXXXXXXXXX?text=Hello%2C%20I%20want%20to%20enquire%20about%20Flats" class="enquire-btn">Enquire on WhatsApp →</a>
+                </div>
             </div>
-            <!-- Product Card 5 -->
+            <!-- MS Round Bars -->
             <div class="product-card">
-                <svg class="product-icon" viewBox="0 0 24 24">
-                    <circle cx="12" cy="12" r="8" />
-                </svg>
-                <h3>Rounds</h3>
-                <a href="https://wa.me/91XXXXXXXXXX?text=Hello%2C%20I%20want%20to%20enquire%20about%20Rounds"
-                    class="enquire-btn">Enquire on WhatsApp →</a>
+                <div class="product-img-wrap">
+                    <img src="MS Round Bars.jpg" alt="MS Round Bars">
+                </div>
+                <div class="product-card-body">
+                    <h3>Rounds</h3>
+                    <a href="https://wa.me/91XXXXXXXXXX?text=Hello%2C%20I%20want%20to%20enquire%20about%20Rounds" class="enquire-btn">Enquire on WhatsApp →</a>
+                </div>
             </div>
-            <!-- Product Card 6 -->
+            <!-- Square Bars -->
             <div class="product-card">
-                <svg class="product-icon" viewBox="0 0 24 24">
-                    <path
-                        d="M13,2H6V22H8V15H13A5,5 0 0,0 18,10A5,5 0 0,0 13,5H8V4H13A6,6 0 0,1 19,10A6,6 0 0,1 13,16H8V22H6V16H13A6,6 0 0,0 19,10A6,6 0 0,0 13,4V2Z" />
-                </svg>
-                <h3>TMT Bars</h3>
-                <a href="https://wa.me/91XXXXXXXXXX?text=Hello%2C%20I%20want%20to%20enquire%20about%20TMT%20Bars"
-                    class="enquire-btn">Enquire on WhatsApp →</a>
+                <div class="product-img-wrap">
+                    <img src="squarebars.webp" alt="Square Bars">
+                </div>
+                <div class="product-card-body">
+                    <h3>Square Bars</h3>
+                    <a href="https://wa.me/91XXXXXXXXXX?text=Hello%2C%20I%20want%20to%20enquire%20about%20Square%20Bars" class="enquire-btn">Enquire on WhatsApp →</a>
+                </div>
             </div>
-            <!-- Product Card 7 -->
+            <!-- TMT Bars -->
             <div class="product-card">
-                <svg class="product-icon" viewBox="0 0 24 24">
-                    <path
-                        d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4Z" />
-                </svg>
-                <h3>MS ERW Pipes</h3>
-                <a href="https://wa.me/91XXXXXXXXXX?text=Hello%2C%20I%20want%20to%20enquire%20about%20MS%20ERW%20Pipes"
-                    class="enquire-btn">Enquire on WhatsApp →</a>
+                <div class="product-img-wrap">
+                    <img src="TMT Bars.jpg" alt="TMT Bars">
+                </div>
+                <div class="product-card-body">
+                    <h3>TMT Bars</h3>
+                    <a href="https://wa.me/91XXXXXXXXXX?text=Hello%2C%20I%20want%20to%20enquire%20about%20TMT%20Bars" class="enquire-btn">Enquire on WhatsApp →</a>
+                </div>
             </div>
-            <!-- Product Card 8 -->
+            <!-- MS ERW Round Pipes -->
             <div class="product-card">
-                <svg class="product-icon" viewBox="0 0 24 24">
-                    <rect x="4" y="4" width="16" height="16" rx="2" />
-                </svg>
-                <h3>SHS/RHS Pipes</h3>
-                <a href="https://wa.me/91XXXXXXXXXX?text=Hello%2C%20I%20want%20to%20enquire%20about%20SHS/RHS%20Pipes"
-                    class="enquire-btn">Enquire on WhatsApp →</a>
+                <div class="product-img-wrap">
+                    <img src="MS ERW Round Pipes.jpg" alt="MS ERW Round Pipes">
+                </div>
+                <div class="product-card-body">
+                    <h3>MS ERW Round Pipes</h3>
+                    <a href="https://wa.me/91XXXXXXXXXX?text=Hello%2C%20I%20want%20to%20enquire%20about%20MS%20ERW%20Pipes" class="enquire-btn">Enquire on WhatsApp →</a>
+                </div>
             </div>
-            <!-- Product Card 9 -->
+            <!-- SHS/RHS Pipes -->
             <div class="product-card">
-                <svg class="product-icon" viewBox="0 0 24 24">
-                    <path d="M2,13H22V11H2V13M2,18H22V16H2V18M2,8H22V6H2V8Z" />
-                </svg>
-                <h3>HR Sheets</h3>
-                <a href="https://wa.me/91XXXXXXXXXX?text=Hello%2C%20I%20want%20to%20enquire%20about%20HR%20Sheets"
-                    class="enquire-btn">Enquire on WhatsApp →</a>
+                <div class="product-img-wrap">
+                    <img src="MS ERW SHS And RHS Pipes.jpg" alt="SHS RHS Pipes">
+                </div>
+                <div class="product-card-body">
+                    <h3>SHS / RHS Pipes</h3>
+                    <a href="https://wa.me/91XXXXXXXXXX?text=Hello%2C%20I%20want%20to%20enquire%20about%20SHS/RHS%20Pipes" class="enquire-btn">Enquire on WhatsApp →</a>
+                </div>
             </div>
-            <!-- Product Card 10 -->
+            <!-- GI Round Pipes -->
             <div class="product-card">
-                <svg class="product-icon" viewBox="0 0 24 24">
-                    <path d="M2,13H22V11H2V13M2,18H22V16H2V18M2,8H22V6H2V8Z" opacity="0.6" />
-                </svg>
-                <h3>CRC Sheets</h3>
-                <a href="https://wa.me/91XXXXXXXXXX?text=Hello%2C%20I%20want%20to%20enquire%20about%20CRC%20Sheets"
-                    class="enquire-btn">Enquire on WhatsApp →</a>
+                <div class="product-img-wrap">
+                    <img src="GI Round Pipes.jpg" alt="GI Round Pipes">
+                </div>
+                <div class="product-card-body">
+                    <h3>GI Round Pipes</h3>
+                    <a href="https://wa.me/91XXXXXXXXXX?text=Hello%2C%20I%20want%20to%20enquire%20about%20GI%20Round%20Pipes" class="enquire-btn">Enquire on WhatsApp →</a>
+                </div>
             </div>
-            <!-- Product Card 11 -->
+            <!-- HR Sheets -->
             <div class="product-card">
-                <svg class="product-icon" viewBox="0 0 24 24">
-                    <path d="M2,13H22V11H2V13M2,18H22V16H2V18M2,8H22V6H2V8Z" fill="#e8640c" />
-                </svg>
-                <h3>GP Sheets</h3>
-                <a href="https://wa.me/91XXXXXXXXXX?text=Hello%2C%20I%20want%20to%20enquire%20about%20GP%20Sheets"
-                    class="enquire-btn">Enquire on WhatsApp →</a>
+                <div class="product-img-wrap">
+                    <img src="ms hr sheets.jpg" alt="HR Sheets">
+                </div>
+                <div class="product-card-body">
+                    <h3>HR Sheets</h3>
+                    <a href="https://wa.me/91XXXXXXXXXX?text=Hello%2C%20I%20want%20to%20enquire%20about%20HR%20Sheets" class="enquire-btn">Enquire on WhatsApp →</a>
+                </div>
             </div>
-            <!-- Product Card 12 -->
+            <!-- CRC Sheets -->
             <div class="product-card">
-                <svg class="product-icon" viewBox="0 0 24 24">
-                    <path d="M2,4H22V6H2V4M2,8H22V10H2V8M2,12H22V14H2V12M2,16H22V18H2V16M2,20H22V22H2V20Z" />
-                </svg>
-                <h3>Chequered Plates</h3>
-                <a href="https://wa.me/91XXXXXXXXXX?text=Hello%2C%20I%20want%20to%20enquire%20about%20Chequered%20Plates"
-                    class="enquire-btn">Enquire on WhatsApp →</a>
+                <div class="product-img-wrap">
+                    <img src="CRC Sheets.jpg" alt="CRC Sheets">
+                </div>
+                <div class="product-card-body">
+                    <h3>CRC Sheets</h3>
+                    <a href="https://wa.me/91XXXXXXXXXX?text=Hello%2C%20I%20want%20to%20enquire%20about%20CRC%20Sheets" class="enquire-btn">Enquire on WhatsApp →</a>
+                </div>
+            </div>
+            <!-- GP Sheets -->
+            <div class="product-card">
+                <div class="product-img-wrap">
+                    <img src="GP Sheet.jpg" alt="GP Sheets">
+                </div>
+                <div class="product-card-body">
+                    <h3>GP Sheets</h3>
+                    <a href="https://wa.me/91XXXXXXXXXX?text=Hello%2C%20I%20want%20to%20enquire%20about%20GP%20Sheets" class="enquire-btn">Enquire on WhatsApp →</a>
+                </div>
+            </div>
+            <!-- Chequered Plates -->
+            <div class="product-card">
+                <div class="product-img-wrap">
+                    <img src="MS Chequered Plate.jpg" alt="MS Chequered Plates">
+                </div>
+                <div class="product-card-body">
+                    <h3>Chequered Plates</h3>
+                    <a href="https://wa.me/91XXXXXXXXXX?text=Hello%2C%20I%20want%20to%20enquire%20about%20Chequered%20Plates" class="enquire-btn">Enquire on WhatsApp →</a>
+                </div>
             </div>
         </div>
     </section>
