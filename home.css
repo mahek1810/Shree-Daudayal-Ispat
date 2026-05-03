@@ -1,0 +1,23 @@
+.carousel-track {
+      display: flex;
+      justify-content: space-around;
+      justify-items: center;
+      transition: transform 0.6s ease;
+}
+.carousel-item {
+      min-width: 20%;
+      text-align: center;
+      padding: 20px;
+}
+.carousel-item img {
+      width: 40%;
+      height: auto;
+      border-radius: 4px;
+}
+
+.carousel-item p {
+      margin-top: 15px;
+      font-size: 16px;
+      color: #333;
+      text-decoration: underline;
+}

@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shree Daudayal Ispat | Structural Steel Supplier in Vapi, Gujarat</title>
+    <meta name="description"
+        content="Authorized dealer of Tata Steel, JSW, SAIL & APL Apollo. Vapi's trusted supplier of structural steel: angles, channels, beams, TMT bars, and more. Cut-to-size available.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Rajdhani:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --navy: #0f1c2e;
+            --navy-light: #1a2a40;
+            --grey: #c0c0c0;
+            --grey-dark: #808080;
+            --orange: #e8640c;
+            --orange-hover: #ff7a21;
+            --white: #ffffff;
+            --black: #050a0f;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--white);
+            color: var(--navy);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1,
+        h2,
+        h3,
+        .logo-text {
+            font-family: 'Rajdhani', sans-serif;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        /* --- Navbar --- */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: var(--navy);
+            color: var(--white);
+            z-index: 1000;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo-text {
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+            color: var(--white);
+        }
+
+        .logo-text span {
+            color: var(--orange);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            color: var(--orange);
+        }
+
+        .nav-cta {
+            background-color: #25D366;
+            /* WhatsApp Green */
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+
+        .nav-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+        }
+
+        .menu-toggle {
+            display: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+
+        /* --- Hero --- */
+        .hero {
+            height: 90vh;
+            background: linear-gradient(rgba(15, 28, 46, 0.8), rgba(15, 28, 46, 0.6)), url('hero.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: var(--white);
+            padding: 0 5%;
+            margin-top: 60px;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            margin-bottom: 1rem;
+            line-height: 1;
+        }
+
+        .hero p {
+            font-size: clamp(1rem, 2vw, 1.25rem);
+            max-width: 800px;
+            margin-bottom: 2.5rem;
+            color: var(--grey);
+        }
+
+        .hero-btns {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: var(--transition);
+            font-family: 'Rajdhani', sans-serif;
+        }
+
+        .btn-primary {
+            background-color: var(--orange);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--orange-hover);
+            transform: translateY(-3px);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            border: 2px solid var(--white);
+            color: var(--white);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--white);
+            color: var(--navy);
+            transform: translateY(-3px);
+        }
+
+        /* --- Trust Bar --- */
+        .trust-bar {
+            background-color: var(--navy-light);
+            padding: 2rem 5%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            border-bottom: 4px solid var(--orange);
+        }
+
+        .trust-item {
+            text-align: center;
+            color: var(--white);
+        }
+
+        .trust-item h3 {
+            font-size: 1.5rem;
+            color: var(--orange);
+        }
+
+        .trust-item p {
+            font-size: 0.9rem;
+            color: var(--grey);
+        }
+
+        /* --- Products Section --- */
+        .section-padding {
+            padding: 6rem 5%;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            position: relative;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        .section-header h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background-color: var(--orange);
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .product-card {
+            background: var(--white);
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .product-card:hover {
+            border-color: var(--orange);
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+        }
+
+        .product-icon {
+            width: 64px;
+            height: 64px;
+            margin-bottom: 1.5rem;
+            fill: var(--navy);
+            transition: var(--transition);
+        }
+
+        .product-card:hover .product-icon {
+            fill: var(--orange);
+        }
+
+        .product-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+
+        .enquire-btn {
+            margin-top: 1.5rem;
+            color: var(--orange);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .enquire-btn:hover {
+            text-decoration: underline;
+        }
+
+        /* --- Gallery Section --- */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            height: 350px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(15, 28, 46, 0.9));
+            color: var(--white);
+            padding: 2rem 1.5rem 1rem;
+            font-family: 'Rajdhani', sans-serif;
+        }
+
+        .gallery-caption h4 {
+            font-size: 1.5rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .gallery-caption p {
+            font-size: 0.9rem;
+            color: var(--grey);
+        }
+
+        /* --- Brands Section --- */
+        .brands-section {
+            background-color: #f8f9fa;
+        }
+
+        .partners-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .partner-card {
+            position: relative;
+            background: var(--white);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+            aspect-ratio: 16 / 10;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            cursor: pointer;
+        }
+
+        .partner-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .partner-logo {
+            max-width: 80%;
+            max-height: 70%;
+            object-fit: contain;
+            transition: var(--transition);
+        }
+
+        .partner-card:hover .partner-logo {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .partner-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, var(--navy) 20%, rgba(15, 28, 46, 0.98) 100%);
+            color: white;
+            padding: 1.2rem;
+            transform: translateY(100%);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+        }
+
+        .partner-card:hover .partner-info {
+            transform: translateY(0);
+        }
+
+        .partner-info h4 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--orange);
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 2px solid var(--orange);
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .partner-info p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: var(--white);
+            margin-top: 0.5rem;
+        }
+
+        /* --- Why Us Section --- */
+        .why-us-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+        }
+
+        .why-card {
+            text-align: center;
+        }
+
+        .why-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--orange);
+        }
+
+        /* --- Contact Section --- */
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .contact-info h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .info-item {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .info-item p {
+            font-size: 1.1rem;
+        }
+
+        .map-placeholder {
+            width: 100%;
+            height: 400px;
+            background-color: var(--grey);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            color: var(--navy);
+            font-weight: 600;
+            text-align: center;
+            padding: 2rem;
+            border: 2px dashed var(--grey-dark);
+        }
+
+        .enquiry-note {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background-color: #fff4e6;
+            border-left: 4px solid var(--orange);
+            border-radius: 4px;
+        }
+
+        /* --- Footer --- */
+        footer {
+            background-color: var(--black);
+            color: var(--white);
+            padding: 4rem 5% 2rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 4rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-logo h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-links a {
+            color: var(--grey);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--orange);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #333;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        /* --- Responsive --- */
+
+        /* Large Desktops (1440px+) */
+        @media (min-width: 1440px) {
+            .partners-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        /* Laptops & Standard Desktops (1024px - 1439px) */
+        @media (max-width: 1280px) {
+            .partners-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .footer-grid {
+                grid-template-columns: 1.5fr 1fr 1fr;
+                gap: 2rem;
+            }
+        }
+
+        /* Tablets & Small Laptops (768px - 1023px) */
+        @media (max-width: 1024px) {
+            .why-us-grid,
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+            .partners-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+            .trust-bar {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .section-padding {
+                padding: 4rem 5%;
+            }
+        }
+
+        /* Tablets (600px - 767px) */
+        @media (max-width: 768px) {
+            nav {
+                padding: 1rem 5%;
+            }
+
+            /* Hamburger Menu */
+            .menu-toggle {
+                display: block;
+                background: none;
+                border: none;
+                cursor: pointer;
+                padding: 5px;
+                z-index: 1001;
+            }
+            .menu-toggle span {
+                display: block;
+                width: 25px;
+                height: 2px;
+                background-color: var(--white);
+                margin: 5px 0;
+                transition: var(--transition);
+                border-radius: 2px;
+            }
+            .menu-toggle.open span:nth-child(1) {
+                transform: translateY(7px) rotate(45deg);
+            }
+            .menu-toggle.open span:nth-child(2) {
+                opacity: 0;
+            }
+            .menu-toggle.open span:nth-child(3) {
+                transform: translateY(-7px) rotate(-45deg);
+            }
+
+            .nav-links {
+                display: flex;
+                flex-direction: column;
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 70%;
+                max-width: 300px;
+                height: 100vh;
+                background-color: var(--navy);
+                padding: 5rem 2rem 2rem;
+                gap: 1.5rem;
+                transition: right 0.3s ease;
+                z-index: 1000;
+                box-shadow: -5px 0 30px rgba(0,0,0,0.3);
+            }
+            .nav-links.open {
+                right: 0;
+            }
+            .nav-links a {
+                font-size: 1.1rem;
+            }
+
+            .hero {
+                height: auto;
+                min-height: 80vh;
+                padding: 8rem 5% 4rem;
+            }
+            .hero h1 {
+                font-size: clamp(2rem, 10vw, 3.5rem);
+            }
+            .hero-btns {
+                flex-direction: column;
+                width: 100%;
+                gap: 1rem;
+            }
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
+
+            .trust-bar {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+                padding: 2rem 5%;
+            }
+
+            .partners-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            }
+            .partner-card {
+                aspect-ratio: 4 / 3;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+            .gallery-item {
+                height: 250px;
+            }
+
+            .why-us-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .nav-cta {
+                padding: 0.5rem 0.8rem;
+                font-size: 0.8rem;
+            }
+            .section-padding {
+                padding: 3rem 5%;
+            }
+            .section-header h2 {
+                font-size: 2rem;
+            }
+        }
+
+        /* Small Phones (max 480px) */
+        @media (max-width: 480px) {
+            .partners-grid {
+                grid-template-columns: 1fr;
+            }
+            .partner-card {
+                aspect-ratio: 16 / 9;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+            .trust-bar {
+                padding: 1.5rem 5%;
+            }
+            .gallery-item {
+                height: 200px;
+            }
+            .footer-logo h2 {
+                font-size: 1.5rem;
+            }
+            .section-padding {
+                padding: 2.5rem 4%;
+            }
+            .logo-text {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo-text">SHREE DAUDAYAL <span>ISPAT</span></div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" onclick="closeMenu()">Home</a></li>
+            <li><a href="#products" onclick="closeMenu()">Products</a></li>
+            <li><a href="#brands" onclick="closeMenu()">Brands</a></li>
+            <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+        </ul>
+        <a href="https://wa.me/91XXXXXXXXXX?text=Hello%2C%20I%20want%20to%20enquire%20about%20steel%20products"
+            class="nav-cta">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path
+                    d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.436 2.512 1.233 3.484l-.794 2.899 2.966-.777c.937.61 2.038.932 3.163.933h.001c3.181 0 5.767-2.587 5.768-5.766.001-3.18-2.586-5.766-5.768-5.766h-.001zm3.801 8.24c-.158.444-.916.813-1.261.865-.343.053-.77.079-2.316-.542-1.854-.744-3.037-2.624-3.13-2.748-.093-.124-.817-.899-.817-1.713 0-.813.427-1.212.579-1.378.152-.166.331-.208.441-.208.11 0 .221.001.317.005.102.004.238-.039.373.287.138.334.475 1.157.517 1.24.041.083.069.18.013.291-.056.111-.083.18-.166.277-.083.097-.174.215-.248.291-.083.084-.17.175-.073.342.097.166.429.709.919 1.146.63.563 1.161.737 1.327.82.166.083.262.069.359-.042.097-.111.413-.484.524-.65.111-.166.221-.138.372-.083s.951.449 1.117.533c.166.083.276.124.317.194.041.07.041.402-.117.846zM12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.662 1.435 5.176L2 22l4.958-1.3c1.513.84 3.255 1.3 5.042 1.3 5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18c-1.63 0-3.167-.47-4.468-1.28l-.32-.2-.24.06-2.02.53.54-1.97-.15-.24C4.54 15.63 4 14.13 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8z" />
+            </svg>
+            WhatsApp
+        </a>
+        <button class="menu-toggle" id="menuToggle" onclick="toggleMenu()" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <header id="home" class="hero">
+        <h1>Steel That Builds Gujarat</h1>
+        <p>Authorized dealer of Tata, JSW, SAIL & more. Vapi's trusted supplier since 1995. Premium structural steel
+            with precise cut-to-size service for bulk and retail orders.</p>
+        <div class="hero-btns">
+            <a href="https://wa.me/91XXXXXXXXXX?text=Hello%2C%20I'd%20like%20to%20get%20a%20quote"
+                class="btn btn-primary">WhatsApp Us</a>
+            <a href="#products" class="btn btn-secondary">View Products</a>
+        </div>
+    </header>
+
+    <div class="trust-bar">
+        <div class="trust-item">
+            <h3>7+ Premium Brands</h3>
+            <p>Authorized Dealer</p>
+        </div>
+        <div class="trust-item">
+            <h3>Cut-to-Size</h3>
+            <p>Ready on Order</p>
+        </div>
+        <div class="trust-item">
+            <h3>Vapi, Gujarat</h3>
+            <p>Central Hub Delivery</p>
+        </div>
+    </div>
+
+    <section id="products" class="section-padding">
+        <div class="section-header">
+            <h2>Our Steel Range</h2>
+            <p>Comprehensive inventory of industrial-grade structural steel</p>
+        </div>
+
+        <div class="products-grid">
+            <!-- Product Card 1 -->
+            <div class="product-card">
+                <svg class="product-icon" viewBox="0 0 24 24">
+                    <path d="M12,2L2,22H22L12,2M12,5.84L18.66,19H5.34L12,5.84Z" />
+                </svg>
+                <h3>Angles</h3>
+                <a href="https://wa.me/91XXXXXXXXXX?text=Hello%2C%20I%20want%20to%20enquire%20about%20Angles"
+                    class="enquire-btn">Enquire on WhatsApp →</a>
+            </div>
+            <!-- Product Card 2 -->
+            <div class="product-card">
+                <svg class="product-icon" viewBox="0 0 24 24">
+                    <path d="M3,5V19H21V5H3M19,17H5V7H19V17Z" />
+                </svg>
+                <h3>Channels</h3>
+                <a href="https://wa.me/91XXXXXXXXXX?text=Hello%2C%20I%20want%20to%20enquire%20about%20Channels"
+                    class="enquire-btn">Enquire on WhatsApp →</a>
+            </div>
+            <!-- Product Card 3 -->
+            <div class="product-card">
+                <svg class="product-icon" viewBox="0 0 24 24">
+                    <path d="M12,2L1,21H23L12,2M12,6L19.53,19H4.47L12,6Z" />
+                </svg>
+                <h3>Beams</h3>
+                <a href="https://wa.me/91XXXXXXXXXX?text=Hello%2C%20I%20want%20to%20enquire%20about%20Beams"
+                    class="enquire-btn">Enquire on WhatsApp →</a>
+            </div>
+            <!-- Product Card 4 -->
+            <div class="product-card">
+                <svg class="product-icon" viewBox="0 0 24 24">
+                    <path d="M3,11H21V13H3V11M3,18H21V20H3V18M3,4H21V6H3V4Z" />
+                </svg>
+                <h3>Flats</h3>
+                <a href="https://wa.me/91XXXXXXXXXX?text=Hello%2C%20I%20want%20to%20enquire%20about%20Flats"
+                    class="enquire-btn">Enquire on WhatsApp →</a>
+            </div>
+            <!-- Product Card 5 -->
+            <div class="product-card">
+                <svg class="product-icon" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="8" />
+                </svg>
+                <h3>Rounds</h3>
+                <a href="https://wa.me/91XXXXXXXXXX?text=Hello%2C%20I%20want%20to%20enquire%20about%20Rounds"
+                    class="enquire-btn">Enquire on WhatsApp →</a>
+            </div>
+            <!-- Product Card 6 -->
+            <div class="product-card">
+                <svg class="product-icon" viewBox="0 0 24 24">
+                    <path
+                        d="M13,2H6V22H8V15H13A5,5 0 0,0 18,10A5,5 0 0,0 13,5H8V4H13A6,6 0 0,1 19,10A6,6 0 0,1 13,16H8V22H6V16H13A6,6 0 0,0 19,10A6,6 0 0,0 13,4V2Z" />
+                </svg>
+                <h3>TMT Bars</h3>
+                <a href="https://wa.me/91XXXXXXXXXX?text=Hello%2C%20I%20want%20to%20enquire%20about%20TMT%20Bars"
+                    class="enquire-btn">Enquire on WhatsApp →</a>
+            </div>
+            <!-- Product Card 7 -->
+            <div class="product-card">
+                <svg class="product-icon" viewBox="0 0 24 24">
+                    <path
+                        d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4Z" />
+                </svg>
+                <h3>MS ERW Pipes</h3>
+                <a href="https://wa.me/91XXXXXXXXXX?text=Hello%2C%20I%20want%20to%20enquire%20about%20MS%20ERW%20Pipes"
+                    class="enquire-btn">Enquire on WhatsApp →</a>
+            </div>
+            <!-- Product Card 8 -->
+            <div class="product-card">
+                <svg class="product-icon" viewBox="0 0 24 24">
+                    <rect x="4" y="4" width="16" height="16" rx="2" />
+                </svg>
+                <h3>SHS/RHS Pipes</h3>
+                <a href="https://wa.me/91XXXXXXXXXX?text=Hello%2C%20I%20want%20to%20enquire%20about%20SHS/RHS%20Pipes"
+                    class="enquire-btn">Enquire on WhatsApp →</a>
+            </div>
+            <!-- Product Card 9 -->
+            <div class="product-card">
+                <svg class="product-icon" viewBox="0 0 24 24">
+                    <path d="M2,13H22V11H2V13M2,18H22V16H2V18M2,8H22V6H2V8Z" />
+                </svg>
+                <h3>HR Sheets</h3>
+                <a href="https://wa.me/91XXXXXXXXXX?text=Hello%2C%20I%20want%20to%20enquire%20about%20HR%20Sheets"
+                    class="enquire-btn">Enquire on WhatsApp →</a>
+            </div>
+            <!-- Product Card 10 -->
+            <div class="product-card">
+                <svg class="product-icon" viewBox="0 0 24 24">
+                    <path d="M2,13H22V11H2V13M2,18H22V16H2V18M2,8H22V6H2V8Z" opacity="0.6" />
+                </svg>
+                <h3>CRC Sheets</h3>
+                <a href="https://wa.me/91XXXXXXXXXX?text=Hello%2C%20I%20want%20to%20enquire%20about%20CRC%20Sheets"
+                    class="enquire-btn">Enquire on WhatsApp →</a>
+            </div>
+            <!-- Product Card 11 -->
+            <div class="product-card">
+                <svg class="product-icon" viewBox="0 0 24 24">
+                    <path d="M2,13H22V11H2V13M2,18H22V16H2V18M2,8H22V6H2V8Z" fill="#e8640c" />
+                </svg>
+                <h3>GP Sheets</h3>
+                <a href="https://wa.me/91XXXXXXXXXX?text=Hello%2C%20I%20want%20to%20enquire%20about%20GP%20Sheets"
+                    class="enquire-btn">Enquire on WhatsApp →</a>
+            </div>
+            <!-- Product Card 12 -->
+            <div class="product-card">
+                <svg class="product-icon" viewBox="0 0 24 24">
+                    <path d="M2,4H22V6H2V4M2,8H22V10H2V8M2,12H22V14H2V12M2,16H22V18H2V16M2,20H22V22H2V20Z" />
+                </svg>
+                <h3>Chequered Plates</h3>
+                <a href="https://wa.me/91XXXXXXXXXX?text=Hello%2C%20I%20want%20to%20enquire%20about%20Chequered%20Plates"
+                    class="enquire-btn">Enquire on WhatsApp →</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="section-padding" style="background-color: #0a111a; color: white;">
+        <div class="section-header">
+            <h2 style="color: white;">Visual Showcase</h2>
+            <p style="color: var(--grey);">A glimpse into our massive ready-stock inventory</p>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="tmt.png" alt="TMT Bars Stock">
+                <div class="gallery-caption">
+                    <h4>TMT Reinforcement Bars</h4>
+                    <p>High-ductility FE500D/550D grades for earthquake-resistant builds.</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="pipes.png" alt="Steel Pipes Stock">
+                <div class="gallery-caption">
+                    <h4>Industrial MS Pipes</h4>
+                    <p>ERW, SHS, and RHS pipes in all standard wall thicknesses.</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="structural.png" alt="Structural Steel Stock">
+                <div class="gallery-caption">
+                    <h4>Beams, Angles & Channels</h4>
+                    <p>Heavy structural sections for industrial sheds and skyscrapers.</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="sheets.png" alt="Steel Sheets Stock">
+                <div class="gallery-caption">
+                    <h4>HR, CR & GP Sheets</h4>
+                    <p>Premium flat products and chequered plates for flooring/decking.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="brands" class="section-padding brands-section">
+        <div class="section-header">
+            <h2>Authorized Partners</h2>
+            <p>We source only from the most reliable steel manufacturers in India</p>
+        </div>
+        <div class="partners-grid">
+            <!-- Partner 1: APL Apollo -->
+            <div class="partner-card">
+                <img src="aplapollo.webp" alt="APL Apollo Logo" class="partner-logo">
+                <div class="partner-info">
+                    <h4>APL APOLLO</h4>
+                    <p>India’s leading manufacturer of high-performance structural steel tubes and innovative hollow
+                        sections for large-scale construction and infrastructure projects.</p>
+                </div>
+            </div>
+
+            <!-- Partner 2: AM/NS India -->
+            <div class="partner-card">
+                <img src="amnsindia.png" alt="AM/NS India Logo" class="partner-logo">
+                <div class="partner-info">
+                    <h4>AM/NS INDIA</h4>
+                    <p>A premier joint venture between ArcelorMittal and Nippon Steel, delivering advanced integrated
+                        flat steel solutions with global technology standards.</p>
+                </div>
+            </div>
+
+            <!-- Partner 3: Balbir Steel -->
+            <div class="partner-card">
+                <img src="balbir.png" alt="Balbir Steel Logo" class="partner-logo">
+                <div class="partner-info">
+                    <h4>BALBIR STEEL</h4>
+                    <p>Trusted manufacturer of high-quality structural steel products, including angles and channels
+                        engineered for maximum strength and industrial durability.</p>
+                </div>
+            </div>
+
+            <!-- Partner 4: Tata Steel -->
+            <div class="partner-card">
+                <img src="TATA Steel.png" alt="Tata Steel Logo" class="partner-logo">
+                <div class="partner-info">
+                    <h4>TATA STEEL</h4>
+                    <p>The global benchmark for steel excellence, offering premium TMT bars and structural steel with a
+                        century-long legacy of trust and innovation.</p>
+                </div>
+            </div>
+
+            <!-- Partner 5: JSW Steel -->
+            <div class="partner-card">
+                <img src="jsw-steel.jpeg.jpg" alt="JSW Steel Logo" class="partner-logo">
+                <div class="partner-info">
+                    <h4>JSW STEEL</h4>
+                    <p>One of India’s largest producers of high-strength, eco-friendly steel products serving critical
+                        sectors from automotive to large-scale infrastructure.</p>
+                </div>
+            </div>
+
+            <!-- Partner 6: Asian Steel -->
+            <div class="partner-card">
+                <img src="Asian Tubes.jpeg.jpg" alt="Asian Steel Logo" class="partner-logo">
+                <div class="partner-info">
+                    <h4>ASIAN STEEL</h4>
+                    <p>Reputed manufacturer of precision-engineered structural steel products, providing reliable beams
+                        and sections for diverse fabrication needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-us" class="section-padding">
+        <div class="section-header">
+            <h2>Why Choose Us</h2>
+        </div>
+        <div class="why-us-grid">
+            <div class="why-card">
+                <h3>Authorized Dealer</h3>
+                <p>100% genuine material directly from plants. Every order comes with proper GST bills and test
+                    certificates.</p>
+            </div>
+            <div class="why-card">
+                <h3>Cut to Size</h3>
+                <p>Save time and wastage. We use precision industrial cutters to provide steel in the exact lengths you
+                    need.</p>
+            </div>
+            <div class="why-card">
+                <h3>Fast Dispatch</h3>
+                <p>Located in the heart of Vapi GIDC. We ensure quick loading and delivery across South Gujarat and
+                    beyond.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-padding">
+        <div class="section-header">
+            <h2>Get In Touch</h2>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Visit Our Warehouse</h3>
+                <div class="info-item">
+                    <p><strong>Address:</strong><br>Plot-243, 2 Phase, Sardar Chowk, GIDC,
+                        Vapi, Gujarat, India - 396195</p>
+                </div>
+                <div class="info-item">
+                    <p>
+                        Gaurang Changela: +91 9925011509<br>
+                        Ashish Changela: +91 9925017509<br>
+                        Hitesh Maradiya: +91 9825098509
+                    </p>
+                </div>
+                <div class="info-item">
+                    <p><strong>Email:</strong><br>daudayal_ispat@yahoo.com</p>
+                </div>
+            </div>
+            <div class="map-area">
+                <div class="map-placeholder">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.650727896268!2d72.9305384!3d20.3605071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be0cf0014d7c98b%3A0xb2f37692dc2caa43!2sSHREE%20DAUDAYAL%20ISPAT!5e0!3m2!1sen!2sin!4v1690874405678!5m2!1sen!2sin"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-logo">
+                <h2>SHREE DAUDAYAL ISPAT</h2>
+                <p>Building India's strength with premium structural steel. Your trusted partner for quality and
+                    reliability.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#brands">Brands</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Business Hours</h3>
+                <ul>
+                    <li>Mon - Sat: 9:00 AM - 7:00 PM</li>
+                    <li>Sunday: Closed</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2026 Shree Daudayal Ispat. All Rights Reserved. | Designed for Excellence
+        </div>
+    </footer>
+
+    <script>
+        // Hamburger Menu
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            const menuToggle = document.getElementById('menuToggle');
+            navLinks.classList.toggle('open');
+            menuToggle.classList.toggle('open');
+        }
+
+        function closeMenu() {
+            const navLinks = document.getElementById('navLinks');
+            const menuToggle = document.getElementById('menuToggle');
+            navLinks.classList.remove('open');
+            menuToggle.classList.remove('open');
+        }
+
+        // Close menu on outside click
+        document.addEventListener('click', function(e) {
+            const nav = document.querySelector('nav');
+            if (!nav.contains(e.target)) closeMenu();
+        });
+
+        // Smooth scroll for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // Simple Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.style.backgroundColor = 'rgba(15, 28, 46, 0.95)';
+                nav.style.padding = '0.8rem 5%';
+            } else {
+                nav.style.backgroundColor = 'var(--navy)';
+                nav.style.padding = '1rem 5%';
+            }
+        });
+    </script>
+</body>
+
+</html>
